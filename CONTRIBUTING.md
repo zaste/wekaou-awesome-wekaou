@@ -1,236 +1,236 @@
 # Contributing to Awesome WEKAOU
 
-> **How to add your awesome resource to the list**
+Thank you for your interest in contributing to the Awesome WEKAOU list! This document provides guidelines for contributing high-quality resources to help the WEKAOU community discover valuable materials.
+
+## Table of Contents
+
+- [How to Contribute](#how-to-contribute)
+- [Quality Standards](#quality-standards)
+- [Submission Guidelines](#submission-guidelines)
+- [Resource Categories](#resource-categories)
+- [Formatting Rules](#formatting-rules)
+- [Review Process](#review-process)
 
 ---
 
-## Quick Start
+## How to Contribute
+
+### Quick Start
 
 1. **Fork** this repository
-2. **Add** your item to the appropriate section in `README.md`
-3. **Open a PR** with a clear title
-4. **Respond** to any feedback
+2. **Add** your resource to the appropriate section in README.md
+3. **Ensure** it meets our quality standards
+4. **Submit** a pull request with a clear description
+5. **Respond** to any feedback from maintainers
+
+### Types of Contributions
+
+We welcome:
+
+- ✅ **New resources**: Tools, tutorials, papers, implementations
+- ✅ **Updates**: Corrections to existing entries
+- ✅ **Improvements**: Better descriptions or categorization
+- ✅ **New sections**: Propose new categories if needed
+
+We generally don't accept:
+
+- ❌ **Commercial promotions**: Unless genuinely valuable and clearly disclosed
+- ❌ **Low-quality content**: Incomplete, unmaintained, or poorly documented
+- ❌ **Duplicates**: Resources already listed
+- ❌ **Off-topic content**: Not directly related to WEKAOU
+
+---
+
+## Quality Standards
+
+All resources must meet these criteria:
+
+### 1. Relevance ⭐⭐⭐⭐⭐
+- **Directly related** to WEKAOU, its concepts, or implementations
+- Addresses SPOC-M, CRL, K-Cycle, OOS, MST, or related frameworks
+- Provides value to WEKAOU practitioners or learners
+
+### 2. Quality ⭐⭐⭐⭐⭐
+- **Well-documented**: Clear README, installation guides, usage examples
+- **Maintained**: Recent updates or timeless reference material
+- **Functional**: Works as advertised (for tools/implementations)
+- **Complete**: Not a stub or placeholder project
+
+### 3. Accessibility ⭐⭐⭐⭐⭐
+- **Publicly available**: No login walls or paywalls for basic access
+- **Properly licensed**: Clear license information
+- **Language**: English or multi-language with English support
+
+### 4. Description ⭐⭐⭐⭐⭐
+- **Clear purpose**: Obvious what the resource is and what it does
+- **Value proposition**: Why it's useful to the WEKAOU community
+- **Honest representation**: No exaggerated claims
 
 ---
 
 ## Submission Guidelines
 
-### What to Submit
+### Before Submitting
 
-✅ **Welcome**:
-- WEKAOU implementations (full or partial)
-- Tools for working with SPOC-M, CRL, or K-Cycle
-- Educational resources (tutorials, courses, examples)
-- Research papers about WEKAOU
-- Domain-specific applications
-- Visualizers, debuggers, IDE extensions
-- Blog posts, talks, or videos
+1. **Search existing entries** to avoid duplicates
+2. **Review the quality standards** above
+3. **Check the resource is live** and accessible
+4. **Prepare a clear description** (see formatting rules below)
 
-❌ **Not Suitable**:
-- General knowledge representation tools (unless WEKAOU-specific)
-- Commercial products without free tier or open source
-- Abandoned projects (>1 year no updates)
-- Self-promotion without substance
-- Duplicate of existing entry
+### Pull Request Format
+
+Use this template for your PR:
+
+```
+## Resource Addition: [Resource Name]
+
+**Category**: [e.g., Learning Materials > Getting Started]
+**URL**: [Resource URL]
+**Description**: [Brief description]
+
+### Why This Resource?
+
+[Explain why this resource is valuable to the WEKAOU community]
+
+### Quality Checklist
+
+- [ ] Resource is publicly accessible
+- [ ] Documentation is clear and complete
+- [ ] Resource is maintained or timeless
+- [ ] No duplicates in the list
+- [ ] Follows formatting guidelines
+- [ ] Description is accurate and concise
+```
+
+### Multiple Resources
+
+If adding multiple resources, create separate commits for each category:
+
+```bash
+git commit -m "feat(learning): add SPOC-M tutorial"
+git commit -m "feat(tools): add validation CLI tool"
+```
 
 ---
 
-## Quality Criteria
+## Resource Categories
 
-### Essential
+### Current Categories
 
-Your submission MUST:
-1. **Work**: Be functional (not just vaporware)
-2. **Document**: Have clear README/docs
-3. **Relate**: Connect directly to WEKAOU
-4. **Be accessible**: Available to the public
+- **Official Resources**: Canonical WEKAOU repos and documentation
+- **Learning Materials**: Tutorials, guides, courses, concept explanations
+- **Implementations**: Real-world deployments, example projects, templates
+- **Tools & Utilities**: Development tools, validators, visualizations, integrations
+- **Research & Papers**: Academic publications, technical reports, studies
+- **Community**: Forums, social media, events, blogs
+- **Related Projects**: Complementary systems, alternatives, foundational tech
 
-### Preferred
+### Proposing New Categories
 
-Your submission SHOULD:
-1. **Be maintained**: Active development or stable
-2. **Have examples**: Usage examples/demos
-3. **Follow standards**: Adhere to WEKAOU spec
-4. **Be tested**: Have tests or validation
+If your resource doesn't fit existing categories:
+
+1. Open an issue titled "New Category Proposal: [Category Name]"
+2. Explain the category purpose and scope
+3. Provide 3-5 example resources that would fit
+4. Wait for community feedback before adding
 
 ---
 
-## Format
+## Formatting Rules
 
 ### Entry Format
 
 ```markdown
-- [Project Name](URL) - Brief description (1-2 sentences). [Tech/Platform]
+- [Resource Name](URL) - Brief description explaining value and purpose.
 ```
 
-**Requirements**:
-- **Name**: Clear, descriptive
-- **URL**: Direct link (not redirect/tracking)
-- **Description**: 
-  - Start with capital letter
-  - End with period
-  - 1-2 sentences max
-  - Focus on what it does, not marketing
-- **Tech/Platform**: Optional but helpful
+### Description Guidelines
 
-**Good Examples**:
+**Good descriptions:**
 ```markdown
-- [SPOC-M Validator](https://example.com) - Command-line tool for validating SPOC-M JSON schemas against the specification. [Python]
-- [K-Cycle Visualizer](https://example.com) - Interactive web app showing K-Cycle state transitions in real-time. [React/D3.js]
-- [CRL Tutorial](https://example.com) - Step-by-step guide to writing Coherent Representation Language queries.
+- [SPOC-M Validator](https://example.com) - CLI tool for validating SPOC-M knowledge representations against the canonical schema with detailed error reporting.
+- [K-Cycle Tutorial](https://example.com) - Step-by-step guide to implementing the Knowledge Cycle with Python examples and best practices.
 ```
 
-**Bad Examples**:
+**Bad descriptions:**
 ```markdown
-❌ [my project](example.com) - check it out its really cool
-   (No capital, no period, vague, no tech stack)
-
-❌ [BEST WEKAOU TOOL](example.com) - THE MOST AMAZING TOOL FOR WEKAOU EVER CREATED!!!
-   (Hyperbolic, not descriptive)
-
-❌ [Untitled Project](example.com) - A tool.
-   (Too vague, no useful info)
+- [My Tool](https://example.com) - A tool for WEKAOU. (Too vague)
+- [Amazing Resource](https://example.com) - The best WEKAOU tutorial ever created! (Exaggerated)
+- [Resource](https://example.com) (No description)
 ```
 
----
+### Description Length
 
-## Placement
-
-### Finding the Right Section
-
-**Implementation?** → `Implementations` section  
-**Tool/Library?** → `Tools & Libraries` (find subcategory)  
-**Tutorial/Guide?** → `Learning Resources`  
-**Domain-specific?** → `Domain Applications`  
-**Paper?** → `Research Papers`  
-**Video?** → `Videos & Talks`  
-
-**Not sure?** Choose the best fit or ask in the PR.
+- **Ideal**: 10-25 words
+- **Maximum**: 40 words
+- **Minimum**: 5 words
 
 ### Alphabetical Order
 
-Within each section, entries should be **alphabetical by name**.
+Within each section, maintain alphabetical order by resource name.
 
-**Exception**: Official/reference implementations at the top.
+### Badges
 
----
+Only official badges are allowed:
 
-## Pull Request Process
+- ✅ Awesome badge (already in README)
+- ✅ License badges (if relevant to the resource itself)
+- ✅ Build status (for tools/implementations)
 
-### 1. Create the PR
-
-**Title Format**:
-```
-Add [Resource Name] to [Section]
-```
-
-**Examples**:
-- `Add SPOC-M Visualizer to Tools & Libraries`
-- `Add CRL Tutorial to Learning Resources`
-
-### 2. PR Description
-
-Explain why it belongs:
-
-```markdown
-## What
-[Brief description of the resource]
-
-## Why Awesome
-[What makes it valuable to the WEKAOU community]
-
-## Checklist
-- [x] Follows format guidelines
-- [x] Alphabetically ordered
-- [x] Link works
-- [x] Description is clear and concise
-- [x] Added to appropriate section
-```
-
-### 3. Respond to Feedback
-
-Maintainers may:
-- Request edits to description
-- Suggest different section
-- Ask for more info about the project
-- Decline if not suitable
-
-**Be responsive**: PRs inactive for 14+ days may be closed.
+Do not add promotional badges like "stars", "downloads", or "trending".
 
 ---
 
 ## Review Process
 
-### Review Criteria
-
-Maintainers check:
-1. ✅ **Format**: Follows entry format
-2. ✅ **Quality**: Meets quality criteria
-3. ✅ **Relevance**: Directly relates to WEKAOU
-4. ✅ **Duplication**: Not already listed
-5. ✅ **Link**: URL works and is correct
-6. ✅ **Placement**: In right section, alphabetical
-
-### Timeline
+### Review Timeline
 
 - **Initial review**: Within 7 days
-- **Follow-up**: 3-5 days after changes
-- **Merge**: After approval (usually same day)
+- **Revisions**: Within 3 days after feedback
+- **Final decision**: Within 14 days of submission
 
----
+### Review Criteria
 
-## Self-Promotion
+Maintainers will evaluate:
 
-### Is It Okay?
+1. **Quality**: Does it meet our standards?
+2. **Relevance**: Is it valuable to the community?
+3. **Formatting**: Does it follow guidelines?
+4. **Accuracy**: Is the description accurate?
+5. **Uniqueness**: Is it already listed?
 
-**Yes!** You can add your own projects.
+### Possible Outcomes
 
-### Guidelines
+- ✅ **Approved**: Merged immediately
+- 🔄 **Revision requested**: Address feedback and resubmit
+- ❌ **Declined**: Doesn't meet standards (with explanation)
 
-✅ **Do**:
-- Add substantial, functional work
-- Be honest about state (beta, experimental, etc.)
-- Follow same quality standards
-- Disclose if commercial
+### After Approval
 
-❌ **Don't**:
-- Spam multiple low-quality entries
-- Use hyperbolic descriptions
-- Add incomplete/non-functional work
-- Resubmit after rejection without changes
-
----
-
-## Maintenance
-
-### Reporting Issues
-
-**Found a broken link?** Open an issue or PR to fix it.  
-**Entry outdated?** Suggest removal or update.  
-**Better description?** PRs for improvements welcome.  
-
-### Removing Entries
-
-Entries may be removed if:
-- Link is permanently broken
-- Project abandoned (>2 years no activity)
-- No longer WEKAOU-related
-- Violates guidelines
-
----
-
-## Code of Conduct
-
-All contributors must follow the [WEKAOU Code of Conduct](https://github.com/zaste/wekaou-.github/blob/main/CODE_OF_CONDUCT.md).
+- Your resource is added to the list
+- You're acknowledged in the contributors section
+- The community can discover and use your resource
 
 ---
 
 ## Questions?
 
-- **General questions**: [wekaou-community](https://github.com/zaste/wekaou-community/discussions)
-- **Submission questions**: Open an issue in this repo
-- **Technical questions**: See the [specification](https://github.com/zaste/wekaou-specification)
+- **General questions**: [Open a discussion](https://github.com/zaste/wekaou-community/discussions)
+- **Technical issues**: [Open an issue](https://github.com/zaste/wekaou-awesome-wekaou/issues)
+- **Governance**: See [WEKAOU Governance](https://github.com/zaste/wekaou-governance)
 
 ---
 
-**Thank you for contributing to Awesome WEKAOU!** 🌟
+## Code of Conduct
+
+This project follows the WEKAOU [Code of Conduct](https://github.com/zaste/wekaou-.github/blob/main/CODE_OF_CONDUCT.md). By participating, you agree to uphold this code.
+
+---
+
+## License
+
+By contributing to this list, you agree that your contributions will be licensed under the same [CC BY 4.0](../LICENSE) license that covers the project.
+
+---
+
+Thank you for helping make the WEKAOU ecosystem more accessible and discoverable! 🎉
