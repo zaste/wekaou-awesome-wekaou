@@ -1,0 +1,82 @@
+name: Resource Suggestion
+description: Suggest a new resource for the awesome list
+title: "[SUGGESTION]: "
+labels: ["suggestion", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a resource! Please fill out the information below.
+
+  - type: input
+    id: resource-name
+    attributes:
+      label: Resource Name
+      description: What is the name of the resource?
+      placeholder: e.g., SPOC-M Validator
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: Link to the resource
+      placeholder: https://example.com/resource
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Which category does this resource belong to?
+      options:
+        - Official Resources
+        - Learning Materials
+        - Implementations
+        - Tools & Utilities
+        - Research & Papers
+        - Community
+        - Related Projects
+        - Other (explain below)
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Brief description of the resource and its value (10-25 words ideal)
+      placeholder: A comprehensive guide to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is this valuable?
+      description: Explain why this resource would benefit the WEKAOU community
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: quality-check
+    attributes:
+      label: Quality Confirmation
+      description: Please confirm the resource meets these criteria
+      options:
+        - label: Resource is publicly accessible
+          required: true
+        - label: Documentation is clear and complete
+          required: true
+        - label: Resource is maintained or timeless
+          required: true
+        - label: Not already listed in awesome-wekaou
+          required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other information about this resource?

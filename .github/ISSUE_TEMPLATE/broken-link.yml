@@ -1,0 +1,67 @@
+name: Broken Link Report
+description: Report a broken or inaccessible resource link
+title: "[BROKEN]: "
+labels: ["broken-link", "maintenance"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping us maintain the quality of this list!
+
+  - type: input
+    id: resource-name
+    attributes:
+      label: Resource Name
+      description: Which resource has a broken link?
+      placeholder: e.g., SPOC-M Tutorial
+    validations:
+      required: true
+
+  - type: input
+    id: broken-url
+    attributes:
+      label: Broken URL
+      description: The URL that is not working
+      placeholder: https://example.com/broken-link
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue Type
+      description: What kind of problem are you experiencing?
+      options:
+        - 404 - Page not found
+        - 403 - Access denied
+        - Redirect to wrong page
+        - Site completely down
+        - Other (explain below)
+    validations:
+      required: true
+
+  - type: input
+    id: alternative
+    attributes:
+      label: Alternative URL (if known)
+      description: If you know where the resource moved, please share
+      placeholder: https://example.com/new-location
+
+  - type: dropdown
+    id: action
+    attributes:
+      label: Suggested Action
+      description: What should we do with this entry?
+      options:
+        - Update URL
+        - Remove from list
+        - Mark as archived
+        - Needs investigation
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Any other details about this issue?
